@@ -18,7 +18,7 @@ function skipScssVariableInjection(file: string | undefined): boolean {
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/frontend-interview-vue/' : '/',
+  base: command === 'build' ? '/frontend-interview/' : '/',
   plugins: [
     vue(),
     vueJsx(),

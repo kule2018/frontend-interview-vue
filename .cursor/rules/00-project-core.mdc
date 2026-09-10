@@ -3,7 +3,7 @@ description: 本项目通用约定（结构、语言、改动边界）
 alwaysApply: true
 ---
 
-# frontend-interview-vue（前端面试手册）
+# frontend-interview（前端面试手册）
 
 - **沟通语言**：始终用中文（简体）输出。
 - **站点名称**：展示名为「前端面试手册」，常量 `SITE_NAME` 在 `src/config/site.ts`；勿与旧名「前端面试速记」混用。

@@ -5,11 +5,11 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-9+-F69220?logo=pnpm)](https://pnpm.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Live Demo](https://img.shields.io/badge/demo-GitHub%20Pages-2ea44f)](https://sowee121.github.io/frontend-interview-vue/)
+[![Live Demo](https://img.shields.io/badge/demo-GitHub%20Pages-2ea44f)](https://sowee121.github.io/frontend-interview/)
 
 **前端面试手册** — 面向前端工程师的面试题库静态站点：18 个专题章节、结构化 JSON 答案、章内目录与代码高亮，支持桌面与手机浏览器复习。内容构建时打包进前端，**无需后端**。
 
-**在线访问**：https://sowee121.github.io/frontend-interview-vue/
+**在线访问**：https://sowee121.github.io/frontend-interview/
 
 ## 目录
 
@@ -49,8 +49,8 @@
 **环境**：Node.js `^20.19.0` 或 `>=22.12.0`，[pnpm](https://pnpm.io/) 9+
 
 ```sh
-git clone https://github.com/sowee121/frontend-interview-vue.git
-cd frontend-interview-vue
+git clone https://github.com/sowee121/frontend-interview.git
+cd frontend-interview
 pnpm install
 pnpm dev
 ```
@@ -64,7 +64,7 @@ pnpm build
 pnpm preview
 ```
 
-预览地址一般为 `http://localhost:4173/frontend-interview-vue/`（以终端输出为准）。
+预览地址一般为 `http://localhost:4173/frontend-interview/`（以终端输出为准）。
 
 ## 常用脚本
 
@@ -90,7 +90,7 @@ pnpm preview
 ## 项目结构
 
 ```
-frontend-interview-vue/
+frontend-interview/
 ├── .github/workflows/deploy.yml   # GitHub Pages 自动部署
 ├── src/
 │   ├── assets/styles/           # tokens / base / layout / components
@@ -204,7 +204,7 @@ SiteFooter
 
 ### 构建与部署
 
-Vite 构建产物为纯静态文件；GitHub Pages 以 `/frontend-interview-vue/` 为 `base`，`postbuild` 生成 `404.html` 实现 History 路由回退。本地 `pnpm dev` 使用 `/` 根路径，便于开发。
+Vite 构建产物为纯静态文件；GitHub Pages 以 `/frontend-interview/` 为 `base`，`postbuild` 生成 `404.html` 实现 History 路由回退。本地 `pnpm dev` 使用 `/` 根路径，便于开发。
 
 ## 贡献指南
 
@@ -238,10 +238,10 @@ node scripts/lint-qa-copy.mjs          # 文案扫描
 
 | 项 | 说明 |
 |----|------|
-| 访问地址 | https://sowee121.github.io/frontend-interview-vue/ |
+| 访问地址 | https://sowee121.github.io/frontend-interview/ |
 | 触发方式 | 推送到 `main` 分支，由 [deploy.yml](.github/workflows/deploy.yml) 自动构建部署 |
 | 仓库设置 | Settings → Pages → Source 选择 **GitHub Actions** |
-| 子路径 | 生产构建 `base` 为 `/frontend-interview-vue/`（见 [`vite.config.ts`](vite.config.ts)） |
+| 子路径 | 生产构建 `base` 为 `/frontend-interview/`（见 [`vite.config.ts`](vite.config.ts)） |
 | History 回退 | `pnpm build` 后 `postbuild` 复制 `index.html` → `404.html`，支持深链刷新 |
 
 > 分享根地址时，GitHub 可能将无末尾 `/` 的 URL 重定向到带 `/` 的形式，属托管平台默认行为，不影响使用。

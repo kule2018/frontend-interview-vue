@@ -13,4 +13,4 @@ alwaysApply: false
   - `_layout.scss`：顶栏、章节 grid、侧栏 TOC、移动 FAB / sheet、`scroll-top-fab`。
   - `_components.scss`：文章卡片、题库块、首页章节卡片、页脚。
 - **变量注入**：Vite 对「非 `src/assets/styles/**`」的 scss/vue 自动注入 `@use "variables" as *;`（见 `vite.config.ts`）。在 `src/assets/styles/**` 与 `main.scss` 内 **不要** 重复 `@use variables`。
-- **部署 base**：生产 `base` 为 `/frontend-interview-vue/`，开发为 `/`；资源与路由思维使用 `import.meta.env.BASE_URL`，避免硬编码根路径。
+- **部署 base**：生产 `base` 为 `/frontend-interview/`，开发为 `/`；资源与路由思维使用 `import.meta.env.BASE_URL`，避免硬编码根路径。
